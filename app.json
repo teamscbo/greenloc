@@ -1,0 +1,53 @@
+{
+    "name": "Map",
+    "js": [
+        {
+            "path": "js/sencha-touch-all-debug.js"
+        },
+        {
+            "path": "app.js",
+            "update": "delta"
+        }
+    ],
+    "css": [
+        {
+            "path": "js/resources/css/sencha-touch.css",
+            "platform": ["chrome", "safari", "ios", "android", "blackberry"],
+            "update": "delta"
+        },
+        {
+            "path": "js/resources/css/wp.css",
+            "platform": ["ie10"],
+            "theme": "Windows",
+            "update": "delta"
+        }
+    ],
+    "appCache": {
+        "cache": [
+            "index.php"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+    "extras": [
+        "js/examples/map/resources/images",
+        "js/examples/map/resources/icons",
+        "js/examples/map/resources/loading"
+    ],
+    "archivePath": "archive",
+    "buildPaths": {
+        "testing": "js/deploy/testing/map",
+        "production": "js/deploy/production/map",
+        "package": "js/deploy/package/map",
+        "native": "js/deploy/native/map"
+    },
+    "buildOptions": {
+        "product": "touch",
+        "minVersion": 3,
+        "debug": false,
+        "logger": "no"
+    },
+    "id": "3a867610-670a-11e1-a90e-4318029d18bb"
+}
